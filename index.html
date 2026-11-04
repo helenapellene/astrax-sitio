@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASTRAX Digital</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Quicksand:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="app.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{colors:{ink:'#000000',astrax:{blue:'#0052FF',navy:'#001A66',cyan:'#00C2FF',red:'#FF3B00',orange:'#FF9A26'}},fontFamily:{display:['"Cormorant Garamond"','serif'],sans:['"Quicksand"','sans-serif']}}}};</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="wrap navrow">
+    <a href="index.html"><img src="astrax-white.png" alt="ASTRAX.DIGITAL" class="logo"></a>
+    <nav class="navlinks">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="web.html">Desarrollo Web</a>
+      <a href="paid.html">Paid Media</a>
+      <a href="automation.html">Automatización</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#contacto" class="pill text-sm hidden sm:inline-flex">Agendar llamada <span class="knob" aria-hidden="true">→</span></a>
+      <button id="menuBtn" aria-label="Abrir menú" class="lg:hidden text-2xl leading-none text-white">≡</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="lg:hidden hidden border-t border-white/10 bg-black/95 backdrop-blur-xl">
+    <div class="wrap flex flex-col py-4 gap-1 text-[var(--muted)]">
+      <a href="web.html" class="py-2.5 hover:text-white">Desarrollo Web</a>
+      <a href="paid.html" class="py-2.5 hover:text-white">Paid Media</a>
+      <a href="automation.html" class="py-2.5 hover:text-white">Automatización</a>
+      <a href="#casos" class="py-2.5 hover:text-white">Casos</a>
+      <a href="#contacto" class="py-2.5 hover:text-white">Contacto</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section id="hero" class="relative overflow-hidden pt-5 md:pt-8 pb-48 md:pb-56">
+    <div class="hero-planet-glow" aria-hidden="true"></div>
+    <div class="hero-planet" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cglow"></div>
+    <div class="wrap relative z-10">
+      <!-- tarjeta imagen -->
+      <div class="media-card">
+        <div class="mc-overlay"></div>
+        <div class="mc-head">
+          <h1 class="text-[clamp(2rem,5.4vw,3.9rem)] font-normal leading-[1.02]"><span class="block">Soluciones</span><span class="block font-display italic spectral-text" style="font-size:1.12em;line-height:1.16;padding-bottom:.08em">digitales.</span></h1>
+        </div>
+      </div>
+      <!-- tagline -->
+      <p class="text-[clamp(.72rem,1.7vw,.95rem)] font-medium uppercase tracking-[.24em] text-white/70 mt-5">Construimos · Automatizamos · <span class="spectral-text">Escalamos.</span></p>
+      <!-- acciones -->
+      <div class="flex items-center justify-between gap-4 mt-6">
+        <div class="flex flex-wrap gap-3">
+          <a href="#servicios" class="pill">Proyectos <span class="knob" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="pill pill-ghost">Agendar llamada <span class="knob" aria-hidden="true">→</span></a>
+        </div>
+        <div class="punto" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS (cápsulas enlazadas) -->
+  <section id="servicios" class="wrap py-12 md:py-20">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+      <div>
+        <h2 class="huge text-[clamp(2.2rem,5vw,3.6rem)]">Servicios</h2>
+        <p class="text-[var(--muted)] max-w-md mt-4">Cuatro fuerzas, un mismo ecosistema. Entrá a cada una.</p>
+      </div>
+      <a href="#contacto" class="pill pill-ghost self-start md:self-auto">Hablemos <span class="knob" aria-hidden="true">→</span></a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <a href="web.html" class="cap text-white" style="background:linear-gradient(165deg,#0052FF,#001A66);box-shadow:0 30px 60px -30px rgba(0,82,255,.8)">
+        <div class="sheen"></div><div class="num relative">01</div>
+        <div class="relative"><h3>Desarrollo Web &amp; Ecommerce</h3><p>Sitios y tiendas a medida para tu negocio. Sin fórmulas genéricas. <span class="underline underline-offset-4">Ver más →</span></p></div>
+      </a>
+      <a href="paid.html" class="cap text-white" style="background:linear-gradient(165deg,#FF9A26,#FF3B00);box-shadow:0 30px 60px -30px rgba(255,59,0,.7)">
+        <div class="sheen"></div><div class="num relative">02</div>
+        <div class="relative"><h3>Paid Media</h3><p>Campañas en Meta y Google. Que la plata vuelva, no los likes. <span class="underline underline-offset-4">Ver más →</span></p></div>
+      </a>
+      <a href="automation.html" class="cap text-[#04121a]" style="background:linear-gradient(165deg,#00C2FF,#0098d6);box-shadow:0 30px 60px -30px rgba(0,194,255,.7)">
+        <div class="sheen"></div><div class="num relative">03</div>
+        <div class="relative"><h3>Automatización &amp; IA</h3><p>Automatizamos lo repetitivo para sacarte ese peso de encima. <span class="underline underline-offset-4">Ver más →</span></p></div>
+      </a>
+      <a href="#contacto" class="cap text-white" style="background:linear-gradient(165deg,#2a2f45,#06070e);box-shadow:0 30px 60px -30px rgba(0,0,0,.8);border:1px solid rgba(255,255,255,.12)">
+        <div class="sheen"></div><div class="num relative">04</div>
+        <div class="relative"><h3>Soluciones 360°</h3><p>Todo integrado en una sola estrategia. <span class="underline underline-offset-4">Hablemos →</span></p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- NOSOTROS + STATS -->
+  <section id="nosotros" class="relative overflow-hidden border-t border-white/5">
+    <div class="glass fs hidden md:block" style="position:absolute;width:140px;height:140px;bottom:50px;right:7%;z-index:0"></div>
+    <div class="wrap relative z-10 py-16 md:py-24 grid lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="huge text-[clamp(2.2rem,5vw,3.6rem)] mb-6">Nosotros</h2>
+        <p class="text-[var(--muted)] max-w-md text-lg">Armamos la parte digital de negocios: desde la web y la pauta hasta los sistemas que automatizan el día a día.</p>
+        <p class="text-[var(--muted)] max-w-md text-lg mt-4">Todo en un mismo lugar, pensado para que cada pieza te sirva y trabaje junto a las demás. Sin herramientas sueltas.</p>
+        <a href="#servicios" class="pill pill-ghost mt-8">Conocé el ecosistema <span class="knob" aria-hidden="true">→</span></a>
+      </div>
+      <div class="flex flex-wrap items-start gap-x-14 gap-y-10 lg:justify-end lg:pt-6">
+        <div><div class="huge text-[clamp(2.6rem,5vw,4rem)] spectral-text normal-case tracking-tight">360°</div><div class="text-sm text-[var(--muted)] mt-2">Enfoque integral</div></div>
+        <div><div class="huge text-[clamp(2.6rem,5vw,4rem)] tracking-tight" style="color:var(--cyan)">&lt;2s</div><div class="text-sm text-[var(--muted)] mt-2">Velocidad de carga</div></div>
+        <div><div class="huge text-[clamp(2.6rem,5vw,4rem)] tracking-tight" style="color:var(--orange)">+50h</div><div class="text-sm text-[var(--muted)] mt-2">Ahorradas al mes</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS -->
+  <section id="casos" class="wrap py-16 md:py-24 border-t border-white/5">
+    <div class="flex flex-col gap-3 max-w-xl mb-10">
+      <span class="eyebrow" style="color:var(--cyan)">Casos de estudio · ejemplos representativos</span>
+      <h2 class="huge text-[clamp(2.2rem,5vw,3.6rem)]">El impacto de un ecosistema integrado</h2>
+      <p class="text-[var(--muted)] mt-2">Resultados ilustrativos de una implementación 360°. No corresponden a un cliente específico.</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="metric" style="--c:#0052FF"><div class="huge text-[clamp(2.4rem,6vw,3.6rem)] normal-case tracking-tight leading-none" style="color:var(--blue)">+178%</div><div class="text-sm text-[var(--muted)] mt-3 relative">Tráfico web</div></div>
+      <div class="metric" style="--c:#00C2FF"><div class="huge text-[clamp(2.4rem,6vw,3.6rem)] normal-case tracking-tight leading-none" style="color:var(--cyan)">+340%</div><div class="text-sm text-[var(--muted)] mt-3 relative">ROAS</div></div>
+      <div class="metric" style="--c:#FF9A26"><div class="huge text-[clamp(2.4rem,6vw,3.6rem)] normal-case tracking-tight leading-none" style="color:var(--orange)">+56%</div><div class="text-sm text-[var(--muted)] mt-3 relative">Customer LTV</div></div>
+      <div class="metric" style="--c:#FF3B00"><div class="huge text-[clamp(2.4rem,6vw,3.6rem)] normal-case tracking-tight leading-none" style="color:var(--red)">-91%</div><div class="text-sm text-[var(--muted)] mt-3 relative">CAC</div></div>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="wrap py-20 md:py-28 border-t border-white/5">
+    <div class="flex flex-col gap-5 max-w-4xl">
+      <span class="eyebrow" style="color:var(--cyan)">Filosofía ASTRAX</span>
+      <h2 class="text-[clamp(1.6rem,3.8vw,2.8rem)] font-normal leading-[1.32]">Creemos que el crecimiento no debería depender de <span class="font-display italic spectral-text">esfuerzos aislados ni herramientas desconectadas.</span></h2>
+      <p class="text-[var(--muted)] max-w-xl">Por eso lo unificamos todo en un solo ecosistema, donde cada pieza tiene un propósito y cada acción impulsa el negocio hacia su siguiente nivel.</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO AZUL -->
+  <section id="contacto" class="relative overflow-hidden" style="background:#0052FF">
+    <div class="absolute rounded-full" style="width:420px;height:420px;top:-160px;right:-120px;filter:blur(90px);background:radial-gradient(circle,#FF3B00,transparent 65%);opacity:.5"></div>
+    <div class="absolute rounded-full" style="width:360px;height:360px;bottom:-160px;left:-100px;filter:blur(90px);background:radial-gradient(circle,#00C2FF,transparent 65%);opacity:.6"></div>
+    <img src="x-white.png" alt="" aria-hidden="true" class="absolute pointer-events-none" style="width:min(360px,52%);opacity:.1;right:-10px;bottom:-24px">
+    <div class="wrap relative z-10 py-16 md:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="flex flex-col gap-5 text-white">
+        <span class="eyebrow text-white/70">Auditoría gratuita</span>
+        <h2 class="huge text-[clamp(2.2rem,6vw,4.4rem)]">Llevemos tu<br>negocio al<br><span class="font-display italic font-normal normal-case tracking-normal">siguiente nivel.</span></h2>
+        <p class="text-white/85 max-w-md">Si tu negocio encaja con lo que hacemos, coordinamos una videollamada de 30 min y charlamos sin vueltas.</p>
+        <div class="flex flex-col gap-3 pt-2 text-sm text-white">
+          <div><span class="text-white/60 block text-xs tracking-[.2em] uppercase mb-1">Escribinos</span><span class="font-display italic text-xl select-all">info@astraxdigital.com</span></div>
+          <div><span class="text-white/60 block text-xs tracking-[.2em] uppercase mb-1">Llamanos</span><span class="font-display italic text-xl select-all">(54) 351 546 2652</span></div>
+        </div>
+      </div>
+      <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-3" novalidate>
+        <input type="hidden" name="form-name" value="contacto">
+        <div hidden><input name="bot-field"></div>
+        <div class="flex flex-col gap-1.5"><label for="nombre" class="text-xs text-white/70">Nombre y apellido</label><input id="nombre" name="nombre" class="fld fld-light" placeholder="Tu nombre" required></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="flex flex-col gap-1.5"><label for="email" class="text-xs text-white/70">Email</label><input id="email" name="email" type="email" class="fld fld-light" placeholder="vos@tunegocio.com" required></div>
+          <div class="flex flex-col gap-1.5"><label for="telefono" class="text-xs text-white/70">Teléfono</label><input id="telefono" name="telefono" type="tel" class="fld fld-light" placeholder="+54 ..."></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="flex flex-col gap-1.5"><label for="servicio" class="text-xs text-white/70">Servicio</label>
+            <select id="servicio" name="servicio" class="fld fld-light">
+              <option value="" disabled selected>Elegí uno</option>
+              <option>Desarrollo Web</option><option>Paid Media</option><option>Automatización &amp; IA</option><option>Soluciones 360°</option><option>No estoy seguro</option>
+            </select></div>
+          <div class="flex flex-col gap-1.5"><label for="presupuesto" class="text-xs text-white/70">Presupuesto</label>
+            <select id="presupuesto" name="presupuesto" class="fld fld-light">
+              <option value="A definir" selected>A definir</option>
+              <option>Menos de US$1.000</option><option>US$1.000 – 3.000</option><option>US$3.000 – 6.000</option><option>Más de US$6.000</option>
+            </select></div>
+        </div>
+        <div class="flex flex-col gap-1.5"><label for="necesidad" class="text-xs text-white/70">Contanos</label><textarea id="necesidad" name="necesidad" rows="3" class="fld fld-light resize-none" placeholder="En qué andás, qué querés resolver…"></textarea></div>
+        <button type="submit" class="btn justify-center mt-1" style="background:#fff;color:#0052FF">Enviar →</button>
+        <p id="formMsg" class="text-sm text-white text-center font-semibold" hidden>Gracias. Te contactamos a la brevedad.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap frow">
+    <div class="flex flex-wrap items-center justify-between gap-5">
+      <img src="astrax-white.png" alt="ASTRAX.DIGITAL" class="logo opacity-90">
+      <nav><a href="web.html">Desarrollo Web</a><a href="paid.html">Paid Media</a><a href="automation.html">Automatización</a><a href="#contacto">Contacto</a></nav>
+    </div>
+    <div class="copy"><span>© 2026 ASTRAX Soluciones Digitales. Todos los derechos reservados.</span><span class="tracking-[.2em] uppercase">ASTRAX.DIGITAL · ARG 2026</span></div>
+  </div>
+</footer>
+
+<script>
+  var mb=document.getElementById('menuBtn'),mm=document.getElementById('mobileMenu');
+  if(mb)mb.addEventListener('click',function(){mm.classList.toggle('hidden');});
+  var hero=document.getElementById('hero'),cg=document.getElementById('cglow');
+  if(hero&&cg&&!matchMedia('(prefers-reduced-motion: reduce)').matches){hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();cg.style.setProperty('--mx',(e.clientX-r.left)+'px');cg.style.setProperty('--my',(e.clientY-r.top)+'px');});}
+  var f=document.getElementById('contactForm');
+  if(f)f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f['bot-field'] && f['bot-field'].value) return;
+    if(!f.nombre.value.trim() || !f.email.value.trim()){ if(f.reportValidity) f.reportValidity(); return; }
+    var b=f.querySelector('button[type=submit]'); b.textContent='Enviando...';
+    fetch('/',{ method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(f)).toString() })
+      .then(function(){ document.getElementById('formMsg').hidden=false; b.textContent='Enviado'; f.reset(); })
+      .catch(function(){ b.textContent='Reintentá en un momento'; });
+  });
+</script>
+</body>
+</html>

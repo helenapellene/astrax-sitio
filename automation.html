@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Automatización & IA — ASTRAX Digital</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Quicksand:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="app.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{colors:{ink:'#000000'},fontFamily:{display:['"Cormorant Garamond"','serif'],sans:['"Quicksand"','sans-serif']}}}};</script>
+<style>:root{--accent:#00C2FF;--accent-2:#0052FF;padding-top:env(safe-area-inset-top,0);padding-bottom:env(safe-area-inset-bottom,0)}</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap navrow">
+    <a href="index.html"><img src="astrax-white.png" alt="ASTRAX.DIGITAL" class="logo"></a>
+    <nav class="navlinks">
+      <a href="index.html">Inicio</a><a href="web.html">Desarrollo Web</a><a href="paid.html">Paid Media</a><a href="automation.html" class="active">Automatización</a><a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a href="index.html#contacto" class="pill text-sm hidden sm:inline-flex">Agendar llamada <span class="knob" aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero svc-hero">
+    <div class="svc-bignum" aria-hidden="true">03</div>
+    <div class="svc-glow" aria-hidden="true"></div>
+    <div class="wrap inner">
+      <a href="index.html" class="text-sm text-[var(--muted)] hover:text-white">← Volver</a>
+      <span class="eyebrow accent-text block mt-6">Servicio 03 · Automatización &amp; IA</span>
+      <h1 class="huge text-[clamp(2.1rem,6.5vw,4.4rem)] mt-4 max-w-4xl">Tu operación, en <span class="font-display italic font-normal normal-case tracking-normal accent-text">piloto automático</span>.</h1>
+      <p class="text-white/80 text-lg max-w-2xl mt-6">Automatizamos lo repetitivo con flujos y agentes de IA. Lo que hoy hace tu equipo a mano —cargar datos, responder, armar reportes— pasa a hacerse solo.</p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a href="index.html#contacto" class="pill">Agendar llamada <span class="knob" aria-hidden="true">→</span></a>
+        <a href="#incluye" class="pill pill-ghost">Qué incluye <span class="knob" aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="incluye" class="wrap py-16 md:py-20 border-t border-white/5">
+    <h2 class="huge text-[clamp(1.8rem,4vw,2.8rem)]">Qué automatizamos</h2>
+    <div class="spec-div mt-5 mb-8" style="max-width:300px"></div>
+    <div class="svc-list">
+      <div class="svc-row"><span class="rn">01</span><div><h3>Workflows a medida</h3><p>Conectamos tus apps y sacamos el trabajo manual del medio.</p></div></div>
+      <div class="svc-row"><span class="rn">02</span><div><h3>Agentes de IA</h3><p>Responden, filtran consultas y pasan al humano cuando hace falta.</p></div></div>
+      <div class="svc-row"><span class="rn">03</span><div><h3>Integraciones</h3><p>CRM, planillas, WhatsApp, email: todo hablando entre sí.</p></div></div>
+      <div class="svc-row"><span class="rn">04</span><div><h3>Reportes solos</h3><p>Se arman y se envían solos, cuando los necesitás.</p></div></div>
+      <div class="svc-row"><span class="rn">05</span><div><h3>Atención 24/7</h3><p>Primera respuesta automática, sin perder ninguna consulta.</p></div></div>
+      <div class="svc-row"><span class="rn">06</span><div><h3>Datos sincronizados</h3><p>La misma info, consistente en todas tus herramientas.</p></div></div>
+    </div>
+  </section>
+
+  <section class="wrap py-16 md:py-20 border-t border-white/5">
+    <h2 class="huge text-[clamp(1.8rem,4vw,2.8rem)]">Cómo trabajamos</h2>
+    <div class="spec-div mt-5 mb-8" style="max-width:300px"></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="step"><div class="n">01</div><h3>Mapeo</h3><p>Identificamos las tareas repetitivas que más tiempo te consumen.</p></div>
+      <div class="step"><div class="n">02</div><h3>Diseño de flujos</h3><p>Diagramamos la automatización y el rol de la IA en cada paso.</p></div>
+      <div class="step"><div class="n">03</div><h3>Implementación</h3><p>Construimos, probamos y validamos en logs antes de poner en producción.</p></div>
+      <div class="step"><div class="n">04</div><h3>Monitoreo</h3><p>Alertas y mejora continua para que todo corra sin sorpresas.</p></div>
+    </div>
+  </section>
+
+  <section class="cta-accent border-t border-white/5" style="background:#00C2FF">
+    <div class="blob" style="width:380px;height:380px;top:-150px;right:-100px;background:radial-gradient(circle,#0052FF,transparent 65%);opacity:.55"></div>
+    <div class="wrap relative z-10 py-16 md:py-24 text-[#04121a] flex flex-col items-start gap-6">
+      <h2 class="huge text-[clamp(2rem,5vw,3.6rem)] max-w-2xl">Dejá que la IA trabaje por vos.</h2>
+      <p class="max-w-md" style="color:#083040">Agendemos una auditoría gratuita y encontremos qué automatizar primero.</p>
+      <a href="index.html#contacto" class="btn" style="background:#04121a;color:#fff">Solicitar propuesta →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap frow">
+    <div class="flex flex-wrap items-center justify-between gap-5">
+      <a href="index.html"><img src="astrax-white.png" alt="ASTRAX.DIGITAL" class="logo opacity-90"></a>
+      <nav><a href="web.html">Desarrollo Web</a><a href="paid.html">Paid Media</a><a href="automation.html">Automatización</a><a href="index.html#contacto">Contacto</a></nav>
+    </div>
+    <div class="copy"><span>© 2026 ASTRAX Soluciones Digitales.</span><span class="tracking-[.2em] uppercase">ASTRAX.DIGITAL · ARG 2026</span></div>
+  </div>
+</footer>
+</body>
+</html>
